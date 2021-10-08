@@ -1,0 +1,199 @@
+/* ======================================================
+   Practice CSS Selectors
+========================================================= */
+
+
+
+
+
+
+
+
+
+/*
+ Change the background color of the submit button when active.
+ hint: https://developer.mozilla.org/en-US/docs/Web/CSS/:active
+*/
+
+
+/*
+ Give the text field a blue border upon focus.
+ hint: https://developer.mozilla.org/en-US/docs/Web/CSS/:focus
+*/
+
+
+/* Give the 'span' tag in the footer a meaningful class name and reduce its font size */
+
+
+/* Give the 'img' tag in the header an ID and set its width to 190px */
+
+
+/* Target all heading tags on the page and set their font family to 'Bree Serif', serif */
+
+
+
+:root {
+	--black: #666;
+	--blue: #429fd7;
+	--green: #5dbb46;
+	--orange: #f26722;
+	--pink: #da2368;
+	--white: #fefefe;
+}
+
+a {
+	color: var(--orange);
+   text-decoration: none;
+ 
+  
+}
+a:active
+{ color:var(--green)}
+
+article {
+	padding: 10 10 0.47rem;
+	margin-bottom: .97rem;
+	border-bottom: 1px solid var(--white);
+}
+body {
+	color: var(--black);
+	font: 16px/1.5 'Raleway', sans-serif;
+}
+footer {
+	
+	border-top: 10px solid var(--white);
+	text-align: center;
+	padding: 1rem 10 10rem;
+
+}
+span{
+
+	font-size: 1vw ;  
+	color:var(--orange);
+}
+
+
+
+figure {
+	margin: 50;
+}
+h1,
+h2 {
+	color: var(--blue);
+	margin: .53rem 0 0 .13rem;
+	font-family:serif;
+	
+}
+h3 {
+	color: var(--pink);
+	font-family: serif;
+}
+header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+	header > img {
+		margin-left: 1rem;
+		max-width: 377px;
+	}
+	header > nav {
+		margin-right: 1rem;
+	}
+input {
+	border: none;
+	border-radius: .3rem;
+	outline: none;
+	padding: .53rem .97rem;
+}
+input[type='submit'] {
+	color: var(--white);
+	background: var(--blue);
+   
+   background-position: var(--green);
+}
+input[type='text'] {
+	flex: 1 1 auto;
+	margin-right: 4px;
+	border: 10px solid var(--blue);
+   background-position: var(--green)
+}
+main ul {
+	padding: 0;
+
+}
+nav ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+}
+	nav li {
+		margin: 0 0.47em;
+	}
+		nav a {
+			display: block;
+			font-size: 0.97rem;
+		}
+
+.container {
+	display: grid;
+	grid-template-rows: 100px auto auto 100px;
+	margin: auto;
+	max-width: 50em;
+	width: 90%;
+}
+.subscribe-input {
+	display: flex;
+	width: 100%;
+}
+a:activ {background-color:blue ;
+}
+.headImage {
+	max-width: 100%;
+	margin-bottom: .97rem;
+}
+.mainContent {
+	display: flex;
+	justify-content: space-around;
+
+  
+}
+a:hover{
+   background-color: pink;
+ }
+
+@media (max-width: 190px) {
+	header {
+		flex-direction: column;
+		justify-content: center;
+	}
+		header img {
+			margin-bottom: 10px;
+		}
+	nav ul {
+		flex-direction: column;
+		margin: 0;
+	}
+		nav li {
+			margin-bottom: 5px;
+		}
+
+}
+
+	.container {
+		grid-template-rows: 200px auto auto 100px
+	}
+	.mainContent {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.subjectMaterialList {
+		text-align: center;
+	}
+		.subjectMaterialList ul {
+			list-style-type: none;
+		}
+	.subscribe {
+		text-align: center;
+
+	}
